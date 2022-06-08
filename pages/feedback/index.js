@@ -44,7 +44,9 @@ export default function Feedback() {
                         value={details.email}
                         onChange={handleChange}
                     />
-                    <button type="submit">Submit</button>
+                    <button type="submit" disabled={submit}>
+                        Submit
+                    </button>
                 </form>
             </div>
             {submit && (
